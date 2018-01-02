@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto Final</title>
+</head>
+<style type="text/css">
+.container{
+	width: 90%;
+	margin: auto;
+}
+.navPF{
+	display: flex;
+	align-items: center;
+}
+.sectionHeaderOne{
+	display: flex;
+	flex-basis: 50%;
+	align-items: center;
+}
+.sectionHeaderOne h1{
+	font-size: 50px;
+	color: #2f2f2f;
+}
+.sectionHeaderOne img{
+	width: 90px;
+	height: 90px;
+}
+.sectionHeaderTwo{
+	flex-basis: 50%;
+}
+.sectionHeaderTwo ul{
+	display: flex;
+	list-style: none;
+}
+.sectionHeaderTwo li{
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 25px;
+	color: #2f2f27;
+}
+.slider img{
+	width: 100%;
+	vertical-align: top;
+}
+.sectionbody{
+	display: flex;
+	justify-content: space-between;
+}
+.articlebody{
+	flex-basis: 46%;
+	background: hsla(45, 80%, 60%, .8);
+	padding: 16px;
+	margin: 15px 0;
+	color: #2f2f2f;
+}
+.articlebody p{
+	font-size: 18px;
+	text-align: justify;
+}
+.articlebody a{
+	color: #2f2f2f;
+	text-decoration: none;
+	font-size: 30px;
+	display: block;
+	margin: 10px;
+}
+.articlebody span, .articlebody strong{
+	display: block;
+	font-size: 16px;
+	margin: 15px;
+}
+.sectiontable{
+	width: 100%;
+	text-align: center;
+	background: #ffcc33;
+	border-collapse: collapse;
+}
+.sectiontable td:nth-child(2),.sectiontable td:nth-child(3){
+	border-left: 3px solid #ffffff;
+}
+.sectionTheader{
+	color: #ffffff;
+	font-size: 30px;
+}
+.sectionTbody{
+	color: #2f2f2f;
+	font-size: 20px;
+}
+</style>
+<body>
+	<div class="container">
+		<header>
+			<nav class="navPF">
+				<div class="sectionHeaderOne">
+					<img src="logo.png">
+					<h1>WebDesing</h1>
+				</div>
+				<div class="sectionHeaderTwo">
+					<ul>
+						<li>Youtube</li>
+						<li>Facebook</li>
+						<li>Twitter</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="slider">
+				<img src="slider.jpg">
+			</div>
+		</header>
+		<section class="sectionbody">
+			<article class="articlebody">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem obcaecati a, repudiandae! Dignissimos fuga quos fugiat sequi magni, repellat, ipsam quam esse nisi nam expedita officia culpa itaque soluta. Deserunt voluptatum, quisquam dicta! Recusandae sint veniam obcaecati reiciendis libero aperiam blanditiis ut esse ducimus, magnam laborum provident sunt consequatur accusantium?
+				</p>
+			</article>
+			<article class="articlebody">
+				<a href="">WebDesign</a>
+				<span>Canal de Youtube creado don el fin de enseñar o guiar programación y diseño web</span>
+				<strong>Creado en el 07-10-2017 - Colombia</strong>
+			</article>
+		</section>
+		<section>
+			<table class="sectiontable">
+				<thead class="sectionTheader">
+					<tr>
+						<td>Curso</td>
+						<td>Fecha Inicio</td>
+						<td>Fecha Fin</td>
+					</tr>	
+				</thead>
+				<tbody class="sectionTbody">
+					<tr>
+						<td>HTML Básico</td>
+						<td>16/10/2017</td>
+						<td>24/11/2017</td>
+					</tr>
+					<tr>
+						<td>CSS Básico</td>
+						<td>16/10/2017</td>
+						<td>20/10/2017</td>
+					</tr>
+					<tr>
+						<td>GitHub</td>
+						<td>08/12/2017</td>
+						<td>24/12/2017</td>
+					</tr>
+					<tr>
+						<td>Jquery</td>
+						<td>08/02/2017</td>
+						<td>08/04/2017</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</div>
+</body>
+</html>

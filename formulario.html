@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form oninput="range_control_value.value = range_control.valueAsNumber">
+		<div>
+			<label>Fecha</label>
+			<input id="date" type="date" autofocus required placeholder="Ingresar fecha">
+		</div>
+		<div>
+			<label>Fecha y Tiempo</label>
+			<input id="datetime" type="datetime" autofocus required placeholder="Ingresar fecha">
+		</div>
+		<div>
+			<label>Mes</label>
+			<input id="month" type="month" autofocus>
+		</div>
+		<div>
+			<label>Semana</label>
+			<input id="week" type="week" autofocus>
+		</div>
+		<div>
+			<label>Hora</label>
+			<input id="time" type="time">
+		</div>
+		<div>
+			<label>Número</label>
+			<input id="number" type="number" min="1" max="15" autofocus placeholder="Ingresar número">
+		</div>
+		</div>
+    		<label for="date">Rango</label>
+  			 <input type="range" name="range_control" min="0" max="10" value="0" autofocus/><output for="range_control" name="range_control_value" >0</output>
+  		<div>
+  		<div>
+  			<label>Email</label>
+  			<input id="email" type="email" required autofocus>
+  		</div>
+  		<div>
+  			<label>Color</label>
+  			<input id="color" type="color" autofocus>
+  		</div>
+  		<div>
+  			<label>Selecionar</label>
+  			<input type="checkbox" autofocus>Sí
+  			<input type="checkbox" autofocus>No
+  		</div>
+  		<div>
+  			<label>Selecionar</label>
+  			<input type="radio" name="color" value="Amarillo" autofocus>Amarillo
+  			<input type="radio" name="color" value="Azul" autofocus>Azul
+  			<input type="radio" name="color" value="Rojo" autofocus>Rojo
+  		</div>
+  		<div>
+  			<input type="submit" value="Enviar">
+  		</div>
+	</form>
+
+	<style type="text/css">
+body { 
+  padding: 10px 10px 0 10px;
+  background-color: #f8f8f8;
+}
+input {
+  padding: 5px;
+  width: 240px;
+  max-width: 100%;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  width: 25%;
+}
+body, input {
+  font-family: sans-serif;
+}
+
+input[type="range"] {
+    width: 240px;
+}
+
+#value {
+  width: 2em;
+  margin-left: 10px;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 180px;
+  vertical-align: middle:
+}
+
+body, input {
+  font-family: sans-serif;
+}
+
+
+span {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+input, span {
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
+<script type="text/javascript">
+  $(function() {
+   ("#datetime").datetime({ 
+       beforeShowDay: $.datetime.noWeekends 
+   });
+});
+</script>
+</body>
+</html>
