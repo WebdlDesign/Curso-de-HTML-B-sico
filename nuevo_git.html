@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.6.1/slimselect.min.css" rel="stylesheet"></link>
+   <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Formulario</title>
+</head>
+<body>
+
+<div class="form">
+  <div class="section-info-tour">
+      <table class="table-info-tour">
+          <thead>
+            <tr>
+              <th>Nombre del trip</th>
+              <th>precio por persona</th>
+              <th>Actividades</th>
+              <th>Precio por actividad</th>
+              <th>Día de salida</th>
+              <th>Duración</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>iWanderTemesis</td>
+              <td>50 usd</td>
+              <td>Actividades</td>
+              <td>75 usd</td>
+              <td>
+                <input type="text" id="date" class="form-control" placeholder="dd-mm-yyyy">
+              </td>
+              <td>
+                <select name="" class="form-control" id="day">
+                  <option value="1">1 dia</option>
+                  <option value="2">2 dias</option>
+                  <option value="3">3 dias</option>
+                  <option value="4">4 dias</option>
+                  <option value="5">5 dias</option>
+                  <option value="6">6 dias</option>
+                  <option value="7">7 dias</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <div class="section-data-tour">
+    <h3 class="title">Actividades</h3>
+    <!-- Options -->
+   <select id="multiple" multiple>
+     <option value="act1">Actividad 1</option>
+     <option value="act2">Actividad 2</option>
+     <option value="act3">Actividad 3</option>
+     <option value="act4">Actividad 4</option>
+     <option value="act5">Actividad 5</option>
+   </select>
+  </div>
+
+  <div class="section-data-tour">
+    <h3 class="title">Turistas</h3>
+    <!-- Options -->
+    <div class="new-tourist">
+      <input type="text" name="" value="" class="form-control" id="turista" placeholder="nombre">
+      <select name="" class="form-control" id="documento">
+        <option value="C.C">Cedula</option>
+        <option value="T.I">Tarjeta Identidad</option>
+        <option value="C.E">Cedula Extranjeria</option>
+        <option value="VI">Visa</option>
+        <option value="PA">Pasaporte</option>
+      </select>
+      <input type="text" name="" value="" class="form-control" id="numero_documento" placeholder="documento">
+      <select name="" class="form-control" id="pais">
+        <option value="co">Colombia</option>
+        <option value="mex">Mexico</option>
+        <option value="us">Usa</option>
+        <option value="esp">España</option>
+        <option value="br">Brasil</option>
+      </select>
+      <button type="button" name="button" class="delete-tourist">X</button>
+    </div>
+    <div class="new-tourist">
+        <button type="button" name="button" class="add-turista" id="add-tourist">agregar</button>
+    </div>
+  </div>
+
+  <div class="section-data-tour data-tour-flex">
+    <div class="tour-day">
+      <h3 class="title">Día de salida</h3>
+      <input type="text" name="" value="" class="form-control" id="dia_salida">
+    </div>
+    <div class="tour-day">
+      <h3 class="title">Día de llegada</h3>
+      <input type="text" name="" value="" class="form-control" id="dial_llegada">
+    </div>
+  </div>
+
+  <div class="section-data-tour">
+      <h3 class="title">Codigo de Descuento</h3>
+      <input type="text" name="" value="" class="form-control input-code" id="codigo_descuento">
+  </div>
+
+  <div class="section-data-tour tour-resumen">
+    <p>Turistas Extranjeros(2 Personas - 2 dias)<span>.....100 USD</span></p>
+    <p>Actividades(2)<span>.....345 USD</span></p>
+    <p>Impuestos(0)<span>.....0 USD</span></p>
+    <p>Turistas Locales(2 Personas - 2 dias)<span>.....100 USD</span></p>
+    <p>Actividades(2)<span>.....345 USD</span></p>
+    <p>Impuestos(19%)<span>.....35 USD</span></p>
+
+    <p class="data-info">Descuento(<span id="descuento">0</span>%)<span>.....25 USD</span></p>
+    <p class="data-info">TOTAL<span>.....35 USD</span></p>
+
+  </div>
+</div>
+
+<h1 id="codigos_de_descuento">codigos de descuento</h1>
+<p>iwander5</p>
+<p>iwander10</p>
+<p>iwander20</p>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.6.1/slimselect.min.js"></script>
+<script src="js/jquery-ui.min.js" charset="utf-8"></script>
+  <script src="js/function.js" charset="utf-8"></script>
+</body>
+</html>
